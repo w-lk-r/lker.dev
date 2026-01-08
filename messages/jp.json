@@ -1,5 +1,25 @@
 {
   "HomePage": {
-    "title": "Hello Jonathan!"
+    "title": "こんにちは ジョナサン!"
+  },  
+  "LinksPage": {
+    "title": "リンク!"
+  },
+  "ShokaiPage": {
+    "title": "紹介!"
+  },
+  "Navigation": {
+    "home": "ホーム",
+    "links": "リンク",
+    "shokai": "紹介"
+  },
+  "LocaleSwitcher": {
+    "label": "言語を変更する",
+    "locale": "{locale, select, jp {日本語} en {English} other {Unknown}}"
+  },
+  "NotFoundPage": {
+    "title": "404 - ページが見つかりません",
+    "description": "お探しのページは存在しません。",
+    "goHome": "ホームに戻る"
   }
 }
