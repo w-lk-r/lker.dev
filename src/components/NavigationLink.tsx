@@ -18,10 +18,11 @@ export default function NavigationLink({
       aria-current={isActive ? 'page' : undefined}
       className={clsx(
         'inline-block my-1 px-4 py-3 rounded-md transition-all duration-200',
-        'focus:outline-none focus:ring-2 focus:ring-blue-400',
+        'focus:outline-none',
+        'border-b-2',
         isActive
-          ? 'text-blue-400 font-semibold border-b-2 border-blue-400'
-          : 'text-slate-100 hover:text-blue-300 hover:bg-slate-800/50'
+          ? 'text-blue-400 font-semibold border-blue-400'
+          : 'text-slate-100 hover:text-blue-300 border-transparent'
       )}
       href={href}
       {...rest}
