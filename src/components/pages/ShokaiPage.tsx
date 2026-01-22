@@ -1,6 +1,24 @@
 import { useTranslations } from "next-intl";
 import { TimelineSection, TimelineItem } from '../Timeline';
 
+type EmploymentEntry = {
+  company: string;
+  role?: string;
+  period: string;
+  duration?: string;
+  location?: string;
+  description?: string;
+};
+
+type EducationEntry = {
+  institution: string;
+  degree?: string;
+  period: string;
+  location?: string;
+  grade?: string;
+  description?: string;
+};
+
 export default function ShokaiPage() {
   const t = useTranslations('ShokaiPage');
 
@@ -12,42 +30,48 @@ export default function ShokaiPage() {
   };
 
   // Get employment entries
-  const employmentEntries = Array.from({ length: 11 }, (_, i) => {
+  const employmentEntries: EmploymentEntry[] = [];
+  for (let i = 0; i < 11; i++) {
     try {
       const company = safeTranslation(`employment.entries.${i}.company`);
-      if (!company) return null;
+      const period = safeTranslation(`employment.entries.${i}.period`);
 
-      return {
+      if (!company || !period) continue;
+
+      employmentEntries.push({
         company,
+        period,
         role: safeTranslation(`employment.entries.${i}.role`),
-        period: safeTranslation(`employment.entries.${i}.period`),
         duration: safeTranslation(`employment.entries.${i}.duration`),
         location: safeTranslation(`employment.entries.${i}.location`),
         description: safeTranslation(`employment.entries.${i}.description`),
-      };
+      });
     } catch {
-      return null;
+      continue;
     }
-  }).filter(Boolean);
+  }
 
   // Get education entries
-  const educationEntries = Array.from({ length: 6 }, (_, i) => {
+  const educationEntries: EducationEntry[] = [];
+  for (let i = 0; i < 6; i++) {
     try {
       const institution = safeTranslation(`education.entries.${i}.institution`);
-      if (!institution) return null;
+      const period = safeTranslation(`education.entries.${i}.period`);
 
-      return {
+      if (!institution || !period) continue;
+
+      educationEntries.push({
         institution,
+        period,
         degree: safeTranslation(`education.entries.${i}.degree`),
-        period: safeTranslation(`education.entries.${i}.period`),
         location: safeTranslation(`education.entries.${i}.location`),
         grade: safeTranslation(`education.entries.${i}.grade`),
         description: safeTranslation(`education.entries.${i}.description`),
-      };
+      });
     } catch {
-      return null;
+      continue;
     }
-  }).filter(Boolean);
+  }
 
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl">
