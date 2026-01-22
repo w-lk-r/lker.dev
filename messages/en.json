@@ -10,7 +10,153 @@
     "icodethisDesc": "View my daily coding challenges and solutions"
   },
   "ShokaiPage": {
-    "title": "Shokai!"
+    "title": "Introduction",
+    "employment": {
+      "title": "Employment History",
+      "entries": [
+        {
+          "company": "Reposit Power",
+          "role": "Software Engineer",
+          "period": "Jul 2021 - Nov 2023",
+          "duration": "2 yrs 5 mos",
+          "location": "Canberra, Australian Capital Territory, Australia",
+          "description": "Working with Reposit Power I have got to show my strengths working across a variety of areas. My strongest of these would be working with infrastructure in GCP and following this working as a Developer with Python as the core programming language. I have worked across these areas and technology stacks: DevOps - Google Cloud Platform, Terraform, Salt, gcloud, gsutil; SRE - Prometheus.io, Zabbix, PagerDuty; Developer - Python, Tox, Poetry, Django, Flask; Version Control - Git and GitHub; CI/CD - Jenkins; Across Roles - GKE (Google Kubernetes Engine), Docker"
+        },
+        {
+          "company": "Reposit Power",
+          "role": "Software Engineering Internship",
+          "period": "Dec 2020 - Jul 2021",
+          "duration": "8 mos",
+          "location": "Canberra, Australian Capital Territory, Australia",
+          "description": ""
+        },
+        {
+          "company": "Support a Star",
+          "role": "Founder",
+          "period": "Jul 2018 - Jun 2020",
+          "duration": "2 yrs",
+          "location": "Canberra, ACT",
+          "description": ""
+        },
+        {
+          "company": "Australian Department of Health",
+          "role": "Research Analyst",
+          "period": "Jan 2020 - Mar 2020",
+          "duration": "3 mos",
+          "location": "",
+          "description": "Part-time"
+        },
+        {
+          "company": "Synergy Group Australia",
+          "role": "Senior Manager",
+          "period": "Jul 2017 - Nov 2019",
+          "duration": "2 yrs 5 mos",
+          "location": "Canberra",
+          "description": "Financial Advisory Services - Synergy's Financial Advisory Services team assists Government entities meet their obligations under the Commonwealth Resource Management Framework."
+        },
+        {
+          "company": "Synergy Group Australia",
+          "role": "Manager",
+          "period": "Apr 2015 - Jun 2017",
+          "duration": "2 yrs 3 mos",
+          "location": "",
+          "description": ""
+        },
+        {
+          "company": "Australian Government Department of Human Services",
+          "role": "Assistant Director - Costing Team",
+          "period": "Aug 2013 - Mar 2015",
+          "duration": "1 yr 8 mos",
+          "location": "Forrest 2603",
+          "description": "Part of a team that completes costings for the Department of Human Services. These costings are a significant factor in the level funding available to the department and often become aggregated into the Federal Budget."
+        },
+        {
+          "company": "Australian Government Department of Human Services",
+          "role": "Assistant Director - External Estimates",
+          "period": "Aug 2012 - Aug 2013",
+          "duration": "1 yr 1 mo",
+          "location": "Forrest 2603",
+          "description": "Complete estimate related processes as set out in Estimates Memorandums. Quality assure the financial statement components of the Portfolio Budget Statement and Portfolio Additional Estimates Statements."
+        },
+        {
+          "company": "Australian Government Department of Human Services",
+          "role": "Assistant Accountant",
+          "period": "Jan 2012 - Aug 2012",
+          "duration": "8 mos",
+          "location": "Tuggeranong 2900",
+          "description": "Monthly Reconciliations, various ledger integrity related tasks. Developed an automated and more accurate straight-line template for leases in accordance with AASB 117."
+        },
+        {
+          "company": "Australian Government Department of Human Services",
+          "role": "Budget Officer",
+          "period": "Mar 2011 - Jan 2012",
+          "duration": "11 mos",
+          "location": "Tuggeranong 2900",
+          "description": "Update Central Budget Management System (CBMS) through adjustments. Developed the reconciliation tool for the estimates baseline."
+        },
+        {
+          "company": "Australian Government Department of Human Services",
+          "role": "Customer Service Officer",
+          "period": "Feb 2009 - Mar 2011",
+          "duration": "2 yrs 2 mos",
+          "location": "Victoria, various locations",
+          "description": "Various roles including: Team Leader, Self Service Champion, ICT Helpdesk, Customer Service Advisor. Financial Information Service officer – development pool, Leadership development pool"
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "entries": [
+        {
+          "institution": "The Australian National University",
+          "degree": "Graduate Diploma of Computing",
+          "period": "2018 - 2021",
+          "location": "",
+          "grade": "",
+          "description": ""
+        },
+        {
+          "institution": "CPA Australia Program",
+          "degree": "CPA, Accounting and Business/Management",
+          "period": "2013 - 2016",
+          "location": "",
+          "grade": "",
+          "description": "Developing and using soft skills along with technical skills in my workplace is a high priority. Studying for the CPA designation keeps me focused on this and allows me to formally study the skills I utilize in the workplace."
+        },
+        {
+          "institution": "Deakin University",
+          "degree": "Graduate Certificate of Accounting",
+          "period": "2009 - 2012",
+          "location": "",
+          "grade": "High Distinction average",
+          "description": "Business Process Management (HD), Management Accounting (HD), Accounting Theory (HD), Financial Reporting (D)"
+        },
+        {
+          "institution": "University of Melbourne",
+          "degree": "Bachelor of Commerce (BCom), Finance",
+          "period": "2005 - 2008",
+          "location": "",
+          "grade": "",
+          "description": "University Games 2008 Team Captain & Manager, 3rd place under 81kg division Judo, 1st place male team judo"
+        },
+        {
+          "institution": "Kardinia International College",
+          "degree": "Victorian Certificate of Education",
+          "period": "1999 - 2004",
+          "location": "",
+          "grade": "",
+          "description": ""
+        },
+        {
+          "institution": "Gotenba Nishi High School",
+          "degree": "Exchange Student",
+          "period": "2002",
+          "location": "Shizuoka-Ken, Japan",
+          "grade": "",
+          "description": ""
+        }
+      ]
+    }
   },
   "Navigation": {
     "home": "Home",

@@ -6,6 +6,7 @@ import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import Navigation from "../../components/Navigation";
 import BackgroundPattern from "../../components/BackgroundPattern";
+import type { Metadata } from 'next';
 
 type Props = {
   children: React.ReactNode;
@@ -28,6 +29,72 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));
 }
 
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'HomePage' });
+
+  return {
+    title: {
+      default: 'w-lk-r.com | Jonathan Walker',
+      template: '%s | w-lk-r.com'
+    },
+    description: 'CPA | Software Engineer | Japanese Learner. Portfolio and professional timeline of Jonathan Walker.',
+    keywords: ['Jonathan Walker', 'Software Engineer', 'CPA', 'Developer', 'Portfolio', 'w-lk-r'],
+    authors: [{ name: 'Jonathan Walker' }],
+    creator: 'Jonathan Walker',
+    publisher: 'Jonathan Walker',
+    metadataBase: new URL('https://w-lk-r.com'),
+    alternates: {
+      canonical: '/',
+      languages: {
+        'en': '/en',
+        'jp': '/jp',
+      },
+    },
+    openGraph: {
+      type: 'website',
+      locale: locale === 'jp' ? 'ja_JP' : 'en_US',
+      url: 'https://w-lk-r.com',
+      siteName: 'w-lk-r.com',
+      title: 'Jonathan Walker | Software Engineer & CPA',
+      description: 'CPA | Software Engineer | Japanese Learner',
+      images: [
+        {
+          url: '/opengraph-image.svg',
+          width: 1200,
+          height: 630,
+          alt: 'w-lk-r.com - Jonathan Walker',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Jonathan Walker | Software Engineer & CPA',
+      description: 'CPA | Software Engineer | Japanese Learner',
+      images: ['/twitter-image.svg'],
+      creator: '@w_lk_r',
+    },
+    icons: {
+      icon: [
+        { url: '/icon.svg', type: 'image/svg+xml' },
+      ],
+      apple: [
+        { url: '/apple-icon.svg', type: 'image/svg+xml' },
+      ],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+  };
+}
 
 
 export default async function LocaleLayout({children, params}: Props) {
