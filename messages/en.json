@@ -1,6 +1,6 @@
 {
   "HomePage": {
-    "name": "Jonathan",
+    "name": "Jonathan Walker",
     "title": "Software Developer"
   },
   "LinksPage": {
@@ -10,7 +10,7 @@
     "icodethisDesc": "View my daily coding challenges and solutions"
   },
   "ShokaiPage": {
-    "title": "Introduction",
+    "title": "About",
     "employment": {
       "title": "Employment History",
       "entries": [
