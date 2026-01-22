@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import Card from './ui/Card';
+import { ReactNode } from 'react';
 
 type SocialLink = {
   name: string;
   url: string;
-  icon: string;
+  icon: ReactNode;
 };
 
 type ProfileCardProps = {
@@ -48,17 +49,17 @@ export default function ProfileCard({
 
         {/* Social Links */}
         {socialLinks.length > 0 && (
-          <div className="flex gap-4 pt-4">
+          <div className="flex gap-6 pt-4">
             {socialLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-600 dark:text-slate-400 hover:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200"
+                className="p-3 text-slate-600 dark:text-slate-400 hover:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200"
                 aria-label={link.name}
               >
-                <span className="text-2xl">{link.icon}</span>
+                {link.icon}
               </a>
             ))}
           </div>

@@ -1,14 +1,17 @@
 import Card from './ui/Card';
 import { ReactNode } from 'react';
+import Image from 'next/image';
 
 type LinkCardProps = {
   title: string;
   description?: string;
   url: string;
   icon?: ReactNode;
+  previewImage?: string;
+  scrapedDescription?: string;
 };
 
-export default function LinkCard({ title, description, url, icon }: LinkCardProps) {
+export default function LinkCard({ title, description, url, icon, previewImage, scrapedDescription }: LinkCardProps) {
   return (
     <a
       href={url}
@@ -16,7 +19,7 @@ export default function LinkCard({ title, description, url, icon }: LinkCardProp
       rel="noopener noreferrer"
       className="block"
     >
-      <Card hover className="p-6">
+      <Card hover className="overflow-hidden p-6">
         <div className="flex items-start gap-4">
           {/* Icon */}
           {icon && (
@@ -35,7 +38,28 @@ export default function LinkCard({ title, description, url, icon }: LinkCardProp
                 {description}
               </p>
             )}
+            {scrapedDescription && (
+              <>
+                <div className="my-3 h-px bg-gradient-to-r from-transparent via-slate-300 dark:via-slate-600 to-transparent"></div>
+                <p className="text-xs text-slate-500 dark:text-slate-500 italic line-clamp-2">
+                  {scrapedDescription}
+                </p>
+              </>
+            )}
           </div>
+
+          {/* Preview Image */}
+          {previewImage && (
+            <div className="relative flex-shrink-0 w-32 h-24 rounded-lg overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900">
+              <Image
+                src={previewImage}
+                alt={title}
+                fill
+                className="object-contain"
+                unoptimized
+              />
+            </div>
+          )}
 
           {/* Arrow indicator */}
           <div className="flex-shrink-0 text-slate-400 dark:text-slate-500 transition-transform duration-200 group-hover:translate-x-1">
