@@ -5,6 +5,7 @@ import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import Navigation from "../../components/Navigation";
+import BackgroundPattern from "../../components/BackgroundPattern";
 
 type Props = {
   children: React.ReactNode;
@@ -27,20 +28,7 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));
 }
 
-export async function generateMetadata(
-  props: Omit<LayoutProps<'/[locale]'>, 'children'>
-) {
-  const {locale} = await props.params;
 
-  const t = await getTranslations({
-    locale: locale,
-    namespace: 'HomePage'
-  });
-
-  return {
-    title: t('title')
-  };
-}
 
 export default async function LocaleLayout({children, params}: Props) {
   // Ensure that the incoming `locale` is valid
@@ -57,6 +45,7 @@ export default async function LocaleLayout({children, params}: Props) {
       <body
         className={`${mPlus1p.variable} ${geistMono.variable} antialiased`}
       >
+        <BackgroundPattern />
         <NextIntlClientProvider>
           <Navigation/>
           {children}

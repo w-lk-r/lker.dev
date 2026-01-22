@@ -1,9 +1,13 @@
 {
   "HomePage": {
-    "title": "こんにちは ジョナサン!"
-  },  
+    "name": "ジョナサン",
+    "title": "ソフトウェアエンジニア"
+  },
   "LinksPage": {
-    "title": "リンク!"
+    "title": "リンク",
+    "githubDesc": "コードとオープンソースプロジェクトをご覧ください",
+    "linkedinDesc": "プロフェッショナルなつながりを作りましょう",
+    "icodethisDesc": "毎日のコーディングチャレンジとソリューションを見る"
   },
   "ShokaiPage": {
     "title": "紹介!"

@@ -1,9 +1,13 @@
 {
   "HomePage": {
-    "title": "Hello Jonathan!"
+    "name": "Jonathan",
+    "title": "Software Developer"
   },
   "LinksPage": {
-    "title": "Links!"
+    "title": "Links",
+    "githubDesc": "Check out my code and open source projects",
+    "linkedinDesc": "Connect with me professionally",
+    "icodethisDesc": "View my daily coding challenges and solutions"
   },
   "ShokaiPage": {
     "title": "Shokai!"
