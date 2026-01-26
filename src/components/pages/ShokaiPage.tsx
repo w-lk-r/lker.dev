@@ -31,7 +31,7 @@ export default function ShokaiPage() {
 
   // Get employment entries
   const employmentEntries: EmploymentEntry[] = [];
-  for (let i = 0; i < 11; i++) {
+  for (let i = 0; i < 5; i++) {
     try {
       const company = safeTranslation(`employment.entries.${i}.company`);
       const period = safeTranslation(`employment.entries.${i}.period`);

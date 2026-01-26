@@ -16,19 +16,11 @@
       "entries": [
         {
           "company": "Reposit Power",
-          "role": "ソフトウェアエンジニア",
-          "period": "2021年7月 - 2023年11月",
-          "duration": "2年5ヶ月",
+          "role": "ソフトウェアエンジニア・インターンシップ",
+          "period": "2020年12月 - 2023年11月",
+          "duration": "2年11ヶ月",
           "location": "キャンベラ、オーストラリア首都特別地域",
-          "description": "Reposit Powerでは、さまざまな分野で自分の強みを発揮することができました。その中でも最も得意なのは、GCPのインフラストラクチャでの作業と、Pythonをコアプログラミング言語とする開発者としての作業です。DevOps - Google Cloud Platform、Terraform、Salt、gcloud、gsutil; SRE - Prometheus.io、Zabbix、PagerDuty; 開発 - Python、Tox、Poetry、Django、Flask; バージョン管理 - GitとGitHub; CI/CD - Jenkins; 全般 - GKE（Google Kubernetes Engine）、Docker"
-        },
-        {
-          "company": "Reposit Power",
-          "role": "ソフトウェアエンジニアインターンシップ",
-          "period": "2020年12月 - 2021年7月",
-          "duration": "8ヶ月",
-          "location": "キャンベラ、オーストラリア首都特別地域",
-          "description": ""
+          "description": "ソフトウェアエンジニア（2021年7月 - 2023年11月）：Reposit Powerでは、さまざまな分野で自分の強みを発揮することができました。その中でも最も得意なのは、GCPのインフラストラクチャでの作業と、Pythonをコアプログラミング言語とする開発者としての作業です。DevOps - Google Cloud Platform、Terraform、Salt、gcloud、gsutil; SRE - Prometheus.io、Zabbix、PagerDuty; 開発 - Python、Tox、Poetry、Django、Flask; バージョン管理 - GitとGitHub; CI/CD - Jenkins; 全般 - GKE（Google Kubernetes Engine）、Docker"
         },
         {
           "company": "Support a Star",
@@ -48,59 +40,19 @@
         },
         {
           "company": "Synergy Group Australia",
-          "role": "シニアマネージャー",
-          "period": "2017年7月 - 2019年11月",
-          "duration": "2年5ヶ月",
+          "role": "シニアマネージャー・マネージャー",
+          "period": "2015年4月 - 2019年11月",
+          "duration": "4年8ヶ月",
           "location": "キャンベラ",
           "description": "財務アドバイザリーサービス - Synergyの財務アドバイザリーサービスチームは、政府機関が連邦資源管理フレームワークの下での義務を果たすのを支援します。"
         },
         {
-          "company": "Synergy Group Australia",
-          "role": "マネージャー",
-          "period": "2015年4月 - 2017年6月",
-          "duration": "2年3ヶ月",
-          "location": "",
-          "description": ""
-        },
-        {
           "company": "オーストラリア政府 人的サービス省",
-          "role": "アシスタントディレクター - コスティングチーム",
-          "period": "2013年8月 - 2015年3月",
-          "duration": "1年8ヶ月",
-          "location": "フォレスト 2603",
-          "description": "人的サービス省のコスティングを完了するチームの一員。これらのコスティングは、省への資金提供レベルの重要な要素であり、連邦予算に集約されることが多い。"
-        },
-        {
-          "company": "オーストラリア政府 人的サービス省",
-          "role": "アシスタントディレクター - 外部見積もり",
-          "period": "2012年8月 - 2013年8月",
-          "duration": "1年1ヶ月",
-          "location": "フォレスト 2603",
-          "description": "見積もり覚書に記載されている見積もり関連プロセスを完了。ポートフォリオ予算書およびポートフォリオ追加見積書の財務諸表コンポーネントの品質保証。"
-        },
-        {
-          "company": "オーストラリア政府 人的サービス省",
-          "role": "アシスタント会計士",
-          "period": "2012年1月 - 2012年8月",
-          "duration": "8ヶ月",
-          "location": "タグラノング 2900",
-          "description": "月次調整、さまざまな元帳整合性関連タスク。AASB 117に準拠したリースの自動化されたより正確な定額法テンプレートを開発。"
-        },
-        {
-          "company": "オーストラリア政府 人的サービス省",
-          "role": "予算担当者",
-          "period": "2011年3月 - 2012年1月",
-          "duration": "11ヶ月",
-          "location": "タグラノング 2900",
-          "description": "調整を通じて中央予算管理システム（CBMS）を更新。見積もりベースラインの調整ツールを開発。"
-        },
-        {
-          "company": "オーストラリア政府 人的サービス省",
-          "role": "カスタマーサービス担当者",
-          "period": "2009年2月 - 2011年3月",
-          "duration": "2年2ヶ月",
-          "location": "ビクトリア州、さまざまな場所",
-          "description": "チームリーダー、セルフサービスチャンピオン、ICTヘルプデスク、カスタマーサービスアドバイザーを含むさまざまな役割。財務情報サービス担当者 - 開発プール、リーダーシップ開発プール"
+          "role": "カスタマーサービス担当者からアシスタントディレクターまで様々な役職",
+          "period": "2009年2月 - 2015年3月",
+          "duration": "6年2ヶ月",
+          "location": "キャンベラ・ビクトリア州",
+          "description": "アシスタントディレクター - コスティングチーム（2013年8月 - 2015年3月）：人的サービス省のコスティングを完了するチームの一員。これらのコスティングは、省への資金提供レベルの重要な要素であり、連邦予算に集約されることが多い。アシスタントディレクター - 外部見積もり（2012年8月 - 2013年8月）：見積もり覚書に記載されている見積もり関連プロセスを完了。アシスタント会計士（2012年1月 - 2012年8月）：月次調整、さまざまな元帳整合性関連タスク。予算担当者（2011年3月 - 2012年1月）：調整を通じて中央予算管理システム（CBMS）を更新。カスタマーサービス担当者（2009年2月 - 2011年3月）：チームリーダー、セルフサービスチャンピオン、ICTヘルプデスク、カスタマーサービスアドバイザーを含むさまざまな役割。"
         }
       ]
     },
